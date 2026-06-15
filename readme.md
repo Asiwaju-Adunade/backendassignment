@@ -1,0 +1,5 @@
+The first thing I did was to install express with typescript. After that, I created a  src folder under backend folder.  Inside src folder, I created the following files: app.ts, books.route.ts, books.service.ts, books.controller.ts and index.ts.
+In the index.ts file i imported express from express, then declared a port, which i used port 3300. then make the server to run on port 3300.
+In the app.ts file i imported router from express, then declared an app router. then i called the appRouter.use() method to route to the books.route.ts file.
+In the books.route.ts file i imported router from express and getBooks from books.controller.ts. then i declared a books router. then i called the booksRouter.get() method to route to the getBooks method in the books.controller.ts file.
+In the books.controller.ts file i imported Request and Response from express and BooksService from books.service.ts. then i declared a booksService. then i called the booksService.getAllBooks() method to get the books. then i sent the books as a response.
